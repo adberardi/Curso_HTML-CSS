@@ -4,36 +4,38 @@
   padding: 0;
 }
 
-.border-custom{
-    border-width: 4px;
-    border-color: black;
-    border-style: solid;
-}
-
 .box {
   font-family: Arial, Helvetica, sans-serif;
   margin: 32px;
   font-size: 16px;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 
-.title-box {
-  width: 50%;
+#title-box {
+  width: 25%;
   border-radius: 12px;
+  border: 2px black dotted;
   background-color: gray;
   padding: 10px;
-  margin: auto;
   text-align: center;
   color: inherit;
+  position: absolute;
 }
 
-.text-box {
+#text-box {
+  width: 50%;
   padding: 10px;
+  margin-top: 25px;
+  /* margin-left: 128px;
+  margin-right: 128px; */
   border-radius: 10px;
   background-color: blueviolet;
+  border: 4px black solid;
 }
 
-.text-box ul {
+#text-box ul {
   padding-left: 5px;
   padding-right: 5px;
   margin: 24px;
