@@ -3,26 +3,29 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-header {
-  display: flex;
-  justify-content: center;
+html{
+  background-image: url(../Layout/background.png);
 }
 
-main {
+h4 {
+  text-align: center;
+}
+
+.center-content{
   display: flex;
   justify-content: center;
 }
 
 .container-header {
   display: inherit;
-  width: 80%;
+  width: 100%;
   margin: 16px;
   border: 2px solid black;
   border-radius: 16px;
+  background-image: url(../Layout/bandera_cuadros.png);
 }
 
-img {
+#logo {
   height: 100px;
   width: 25%;
 }
@@ -38,23 +41,36 @@ img {
 .container-main {
   display: inherit;
   justify-content: inherit;
-  width: 80%;
+  width: 100%;
   margin: 16px;
   border: 2px solid black;
-  border-radius: 16px;
+  background: gray;
 }
 
 .side-menu {
   width: 40%;
   border-right: inherit;
-  padding: 32px;
+  padding: 20px;
 }
 
 .item {
-  width: fit-content;
-  height: 40px;
+  width: 80%;
+  height: 80px;
   border: 2px solid black;
-  margin-top: 16px;
+  border-radius: 16px;
+  /* margin: Arriba | Derecha | Abajo | Izquierda */
+  margin: 16px auto 20px auto; 
+  background: tomato;
+}
+
+.card {
+  height: 20rem;
+  width: 80%;
+  margin: 4px;
+  border: 2px solid black;
+  border-radius: 16px;
+  text-align: center;
+  background: tomato;
 }
 
 .content-main {
@@ -63,28 +79,24 @@ img {
   margin: auto;
 }
 
-.card {
-  height: 100px;
-  width: fit-content;
-  margin: 4px;
-  height: 16px;
-  border: 2px solid black;
-  text-align: center;
-  background: gray;
-}
-
 .container-footer {
   display: inherit;
   justify-content: inherit;
-  width: 80%;
+  width: 100%;
   margin: 16px;
+  background-image: url(../Layout/bandera_cuadros.png);
 }
 
 .content-footer {
   margin: auto;
 }
 
-h4 {
-  text-align: center;
+.logo-social-media{
+  height: 45px;
+  width: 45px;
+  margin: 15px;
 }
 
+p{
+  padding: 10px;
+}
