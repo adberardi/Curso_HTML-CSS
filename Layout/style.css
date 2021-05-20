@@ -22,7 +22,8 @@ h4 {
   margin: 16px;
   border: 2px solid black;
   border-radius: 16px;
-  background-image: url(../Layout/bandera_cuadros.png);
+  background:linear-gradient(30deg, crimson,sienna, royalblue, indianred, purple);
+  /* background-image: url(../Layout/bandera_cuadros.png); */
 }
 
 #logo {
