@@ -3,26 +3,37 @@
   margin: 0;
   box-sizing: border-box;
 }
-html{
+html {
   /* background-image: url(../Layout/background.png); */
-  background: linear-gradient(30deg,red,black);
+  background: linear-gradient(0deg, black, red);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+  height: max-content;
 }
 
 h4 {
   text-align: center;
 }
 
-button{
+button {
   color: inherit;
   height: 2rem;
   width: 80%;
-  border: 2px solid white;
+  border: 2px solid red;
   border-radius: 0.5rem;
-  background: none;
+  color: white;
+  background-color: red;
 }
 
-.center-content{
+button:hover{
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+
+.center-content {
   display: flex;
   justify-content: center;
 }
@@ -30,16 +41,18 @@ button{
 .container-header {
   display: inherit;
   width: 100%;
-  margin: 16px;
-  border: 2px solid black;
-  border-radius: 16px;
-  background:linear-gradient(30deg, black, gray, white, gray, gray);
+  /* margin: 16px; */
+  padding: 16px;
+  /* border: 2px solid black; */
+  /* border-radius: 16px; */
+  /* background: linear-gradient(30deg, black, gray, white, gray, gray); */
+  background-color: black;
   /* background-image: url(../Layout/bandera_cuadros.png); */
 }
 
 #logo {
-  height: 100px;
-  width: 25%;
+  height: 50px;
+  width: 15%;
 }
 
 #container-logo {
@@ -50,69 +63,96 @@ button{
   margin: auto;
 }
 
+#container-navigation > a{
+  color: white;
+  border-radius: 8px;
+  border: 2px solid red;
+  padding: 16px;
+  /* margin: 0px 4px 0px 4px; */
+  background-color: red;
+}
+
+#container-navigation > a:hover{
+  background-color: black;
+  color: white;
+}
+
 .container-main {
   display: inherit;
   justify-content: inherit;
   width: 100%;
-  margin: 16px;
-  border: 2px solid black;
+  margin: 8px;
+  /* border: 2px solid black; */
   border-radius: 16px;
-  background: gray;
-  color: white;
+  background: none;
+  color: black;
 }
 
 .side-menu {
   height: fit-content;
-  width: 30%;
+  width: 50%;
   /* border-right: inherit; */
   padding: 2px;
   line-height: 1.25rem;
 }
 
 .item {
-  width: 80%;
-  height: 130px;
+  width: 100%;
+  height: 110px;
   /* border: 2px solid black; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 16px;
+  border-radius: 8px;
   /* margin: Arriba | Derecha | Abajo | Izquierda */
-  margin: 16px auto 20px auto; 
-  background: red;
+  margin: 16px auto 25px 8px;
+  background: white;
+  
 }
 
 .card {
-  height: 20rem;
-  width: 80%;
-  margin: 4px;
+  height: 15rem auto;
+  width: 25%;
+  margin: 12px;
   /* border: 2px solid black; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 16px;
+  border-radius: 8px;
   text-align: center;
-  background: red;
+  background: white;
 }
 
 .card > div {
   display: flex;
   flex-direction: column;
-align-items: center;
+  align-items: center;
 }
 
-.content-title{
+.content-title {
   margin-top: 1rem;
   text-align: justify;
   text-justify: inter-word;
-  text-indent: 0.5rem;
+  text-indent: 1rem;
 }
 
-.content{
+.content {
   margin-bottom: 1rem;
 }
 
-.content-button{
-/* align-items: center; */
+.title{
+  height: 1rem;
+  width: fit-content;
 }
 
-.content-image{
+.summary{
+  height: 8rem;
+  width: fit-content;
+  padding: 10px;
+}
+
+.content-button {
+  /* align-items: center; */
+  margin: 1rem
+}
+
+.content-image {
   height: 150px;
   width: 200px;
 }
@@ -120,29 +160,35 @@ align-items: center;
 .content-main {
   display: inherit;
   justify-content: inherit;
-  margin: auto;
+  margin: 10px auto auto auto;
 }
 
 .container-footer {
   display: inherit;
   justify-content: inherit;
   width: 100%;
-  margin: 16px;
-  border-radius: 16px;
-  background: linear-gradient(30deg,black,gray,white,gray);
+  height: 134px;
+  color: white;
+  /* margin: 16px; */
+  /* border-radius: 16px; */
+  /* background: linear-gradient(0deg, black, red); */
   /* background-image: url(../Layout/bandera_cuadros.png); */
 }
 
 .content-footer {
-  margin: auto;
+  /* margin: auto; */
 }
 
-.logo-social-media{
+.logo-social-media {
   height: 45px;
   width: 45px;
   margin: 15px;
 }
 
-p{
+p {
   padding: 10px;
+}
+.item > p{
+  display: inline-block;
+  font-size: 12px;
 }
